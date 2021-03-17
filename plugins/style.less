@@ -25,7 +25,7 @@
 
     &-indicator {
         border-radius: @indicatorSize;
-        border: 4px solid @babylonPurple;
+        border: 2px solid @babylonPurple;
         color: transparent;
         font-size: @indicatorFontSize;
         height: @indicatorSize;
@@ -44,7 +44,7 @@
 
     // Checked styles for the fake checkboxes
     &-checkbox:checked + &-indicator {
-
+		border: 4px solid @babylonPurple;
 		background-color:@babylonPurple; /* fallback for gradient */
 		background-image: radial-gradient(circle at center, @babylonPurple 10px,  white 10px);
     }
