@@ -9,8 +9,9 @@
     .tota11y-dark-color-scheme;
     .position(fixed, auto, auto, 0, @viewportEdgePadding);
 
-    border-top-left-radius: @borderRadius;
-	border-top-right-radius: @borderRadius;
+	border: 2px solid #400099;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2);
+	border-radius: 8px 8px 0px 0px;
 	/* make it scrollable vertically at 200% zoom */
 	overflow: scroll;
 	max-height:95%;
@@ -18,10 +19,12 @@
     z-index: @z-index--UI;
 
     &-toggle {
-        background-color: @darkGray;
+        background-color: @babylonPurple;
         display: block;
         padding: @togglePadding;
-        width: 100%;
+		width: 100%;
+		border-radius: 10px;
+		border:white;
     }
 
     &-logo {
@@ -54,4 +57,23 @@
     width: 1px;
 }
 
+.tota11y-info {	border: 2px solid #400099;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04), 6px 4px 11px rgba(0, 0, 0, 0.2);
+	border-radius: 8px 8px 0px 0px;
+	background-color: white;
+
+
+}
+
+/* over-rides n shizz */
+
 .tota11y-label:hover {outline:1px red solid; z-index:9999;}
+
+.tota11y-expanded .tota11y-toolbar-toggle {border-radius:0;}
+
+li.tota11y-plugin {border-bottom:none;}
+
+.tota11y-info-section.active {background-color:#F3F6F9;border-radius: 4px; }
+
+.tota11y-info-error-chevron {color:@babylonPurple;font-size: large;}
+

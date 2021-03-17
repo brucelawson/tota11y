@@ -63,7 +63,7 @@ class Plugin {
                 {this.$checkbox}
                 <div aria-hidden="true"
                      className="tota11y-plugin-indicator">
-                    &#x2713;
+                    
                 </div>
                 <div className="tota11y-plugin-info">
                     <div className="tota11y-plugin-title">

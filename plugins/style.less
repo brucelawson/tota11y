@@ -3,7 +3,7 @@
 @descriptionWidth: 200px;
 @pluginPadding: 12px;
 @controlMargin: 15px;
-@indicatorSize: 16px;
+@indicatorSize: 40px;
 @indicatorFontSize: 13px;
 
 .tota11y-plugin {
@@ -25,7 +25,7 @@
 
     &-indicator {
         border-radius: @indicatorSize;
-        border: 1px solid @lightBorderColor;
+        border: 4px solid @babylonPurple;
         color: transparent;
         font-size: @indicatorFontSize;
         height: @indicatorSize;
@@ -36,22 +36,23 @@
 
     // Focus styles for the fake checkboxes
     &-checkbox:focus + &-indicator {
-        @focusColor: darken(@kaGreen, 10%);
+        @focusColor: darken(@radioFocus, 10%);
 
-        border-color: @kaGreen;
-        background-color: @focusColor;
-        color: @focusColor;
+        border-color: @babylonPurple;
+        background-color: @babylonPurple;
     }
 
     // Checked styles for the fake checkboxes
     &-checkbox:checked + &-indicator {
-        background-color: @kaGreen;
-        border-color: @kaGreen;
-        color: white;
+
+		background-color:@babylonPurple; /* fallback for gradient */
+		background-image: radial-gradient(circle at center, @babylonPurple 10px,  white 10px);
     }
+
 
     &-title {
         font-weight: bold;
+		font-size:16px; line-height:24px;
     }
 
     &-description {
@@ -64,8 +65,8 @@
 
 .tota11y-plugins {
     &-separator {
-        font-size: 12px;
+        font-size: 16px;
         margin: 7px @controlMargin 0;
-        text-transform: uppercase;
+		font-weight: bold;
     }
 }

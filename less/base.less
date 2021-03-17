@@ -5,14 +5,20 @@
 
 @import "variables.less";
 
+@font-face {
+	font-family: 'visuelt';
+	src:  url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff2') format('woff2'),
+		  url('https://www.babylonhealth.com/assets/fonts/visuelt-regular.woff') format('woff');
+  }
+
 .tota11y {
     // A reset of all styles in tota11y elements
     &, & * {
         border: none;
         background-color: inherit;
         box-sizing: border-box;
-        color: @white;
-        font-family: Arial;
+        color: black;
+        font-family: visuelt, Arial, Helvetica, sans-serif;
         font-size: @fontSize;
         font-style: normal;
         font-weight: 400;
