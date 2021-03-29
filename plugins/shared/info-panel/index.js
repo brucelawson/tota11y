@@ -208,8 +208,8 @@ class InfoPanel {
                     </span>
                 </header>
                 <div className="tota11y-info-body">
+					<ul role="tablist" className="tota11y-info-tabs" />
                     <div className="tota11y-info-sections" />
-                    <ul role="tablist" className="tota11y-info-tabs" />
                 </div>
             </div>
         );

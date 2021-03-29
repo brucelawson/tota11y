@@ -12,6 +12,11 @@
 @dismissFontSize: 25px;
 @descriptionFontSize: 13px;
 
+/* background: #FFFFFF;
+border: 2px solid #400099;
+box-shadow: 0px 0px 0px 2px #FFFFFF;
+border-radius: 8px; */
+
 .tota11y-info {
   .tota11y-dark-color-scheme;
   .tota11y-no-select;
@@ -157,29 +162,6 @@
       margin-top: 3px;
       padding-left: 5px;
 
-      // Styling for both the lens and handle
-      &-glyph {
-        border-color: @babylonPurple;
-      }
-      &:hover &-glyph {
-        border-color: @babylonPurple;
-      }
-
-      &-lens {
-        @radius: 8px;
-        border: 1px solid;
-        border-radius: 50%;
-        height: @radius;
-        width: @radius;
-      }
-
-      &-handle {
-        border-left: 1px solid;
-        height: 7px;
-        // A transform to rotate it and line it up with the lens
-        transform: translateX(-2px) translateY(-2px) rotate(45deg);
-        width: 1px;
-      }
     }
 
     &-description {
@@ -204,13 +186,14 @@
   }
 
   &-error-count {
-    height: 20px;
-    line-height: 20px;
+    height: 25px;
+    line-height: 25px;
     background-color: red;
-    border-radius: 10px;
+    border-radius: 50%;
+
     color: white;
     display: inline;
     margin-left: 5px;
-    padding: 1px 8px;
+    padding: 2px 9px;
   }
 }
